@@ -553,7 +553,7 @@ input[type="checkbox"]:checked ~ .box {
     min-height: 32px;
     width: 100%;
     box-sizing: border-box;
-    background: url(/img/Forma\ 1.png);
+    background: url(../img/Forma\ 1.png);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 0 28px 0;
@@ -563,7 +563,7 @@ input[type="checkbox"]:checked ~ .box {
     min-height: 40px;
     width: 100%;
     box-sizing: border-box;
-    background: url(/img/Forma\ 2.png);
+    background: url(../img/Forma\ 2.png);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 0 19px 0; 
@@ -573,7 +573,7 @@ input[type="checkbox"]:checked ~ .box {
     min-height: 35px;
     width: 100%;
     box-sizing: border-box;
-    background: url(/img/Forma\ 3.png);
+    background: url(../img/Forma\ 3.png);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 0 25px 0;
@@ -596,7 +596,7 @@ input[type="checkbox"]:checked ~ .box {
     color: #FBFBFB;
 }
 .footer {
-    background: url(/img/footer-background.jpg);
+    background: url(../img/background-feedback.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
