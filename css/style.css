@@ -596,7 +596,7 @@ input[type="checkbox"]:checked ~ .box {
     color: #FBFBFB;
 }
 .footer {
-    background: url(../img/background-feedback.png);
+    background: url(../img/footer-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
