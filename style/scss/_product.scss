@@ -90,16 +90,14 @@
   }
 }
 .description {
-position: absolute;
+position: relative;
   max-width: 1141px;
   width: 100%;
   max-height: 601px;
   border: 1px solid rgb(234, 234, 234);
   padding: 65px 0 65px 0;
   background: #ffff;
-  z-index: 10;
-  top: 850px;
-  right: 156px;
+  margin-top: -65px;
   &__title {
     position: relative;
     font-weight: 400;
@@ -157,13 +155,12 @@ position: absolute;
     margin: 0 auto 48px;
   }
   &__item {
+    display: flex;
+    align-items: center;
+    gap: 9px;
     font-weight: 400;
     font-size: 14px;
     color: #6f6e6e;
-    span {
-        width: 10px;
-        height: 5px;
-    }
   }
   &__btn {
     display: block;
@@ -181,6 +178,5 @@ position: absolute;
 
 }
 .product__container {
-    margin-top: 664px;
-    margin-bottom: 128px;
+  padding: 128px 0 128px 0;
 }
