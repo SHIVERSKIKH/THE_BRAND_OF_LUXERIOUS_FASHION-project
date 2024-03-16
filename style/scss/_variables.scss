@@ -1,0 +1,25 @@
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @mixin flexColumnCenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @mixin flexSpaceBetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  @mixin backgroundCenterCover {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  @mixin backgroundCenterContain {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }

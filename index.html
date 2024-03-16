@@ -5,101 +5,110 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Marketing</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
 
 </head>
 <body>
-   <header>
+   <header class="header">
     <div class="wrp-width">
         <div class="center">
-            <div class="header-menu">
-                <ul class="header-logo-list">
-                    <li class="header-logo-item"><a class="header-logo-link" href="#"><img  class="header-logo-icon" src="img/logo.png" alt="logo" height="38"></a></li>
-                    <li class="header-search-item"><form action="#" class="page-header-search-form"> <input class="page-header-search-btn" id="search-btn" type="search">
-                      <label for="search-btn"><svg class="icon-menu" width="27" height="28" viewBox="0 0 27 28" xmlns="http://www.w3.org/2000/svg">
+            <div class="header__menu">
+                <ul class="header__logo-list">
+                    <li class="header__logo-item">
+                      <a class="header__logo-link" href="#"><img  class="header__logo-icon" src="img/logo.png" alt="logo" height="38">
+                      </a></li>
+                    <li class="header__search-item">
+                      <form action="#" class="header__search-form">
+                        <input class="header__search-btn" id="search-btn" type="search">
+                      <label for="search-btn">
+                        <svg class="icon-menu" width="27" height="28" viewBox="0 0 27 28" xmlns="http://www.w3.org/2000/svg">
                         <path d="M19.0589 17.6251C20.6705 15.865 21.6275 13.6039 21.769 11.2216C21.9106 8.83932 21.2281 6.48088 19.8362 4.54232C18.4443 2.60377 16.4278 1.20318 14.1252 0.575765C11.8227 -0.0516554 9.37437 0.132305 7.19143 1.09675C5.0085 2.0612 3.22389 3.74739 2.1373 5.87217C1.05071 7.99695 0.728322 10.4309 1.22426 12.7653C1.72021 15.0997 3.00428 17.1923 4.86085 18.6919C6.71741 20.1914 9.0334 21.0064 11.4199 21.0001C13.6723 21.0031 15.8638 20.2691 17.6599 18.9101L25.4079 26.7171C25.4934 26.8061 25.5958 26.8772 25.7091 26.9261C25.8225 26.9751 25.9444 27.0009 26.0679 27.0021C26.1916 27.0024 26.314 26.9773 26.4276 26.9283C26.5411 26.8793 26.6434 26.8074 26.7279 26.7171C26.9018 26.5362 26.999 26.295 26.999 26.0441C26.999 25.7931 26.9018 25.5519 26.7279 25.371L19.0589 17.6251ZM2.88589 10.5001C2.89873 8.81477 3.41021 7.17101 4.35586 5.776C5.30151 4.38098 6.63899 3.29715 8.1997 2.66114C9.76042 2.02513 11.4745 1.86542 13.1258 2.20213C14.7772 2.53884 16.2919 3.3569 17.479 4.55319C18.6661 5.74948 19.4725 7.27044 19.7965 8.92433C20.1204 10.5782 19.9475 12.291 19.2995 13.8468C18.6515 15.4026 17.5574 16.7316 16.1551 17.6665C14.7529 18.6014 13.1052 19.1002 11.4199 19.1C9.14843 19.0892 6.97409 18.1775 5.3741 16.5652C3.77412 14.9528 2.87924 12.7715 2.88589 10.5001Z" />
-                        </svg></label></form></li>
+                        </svg>
+                      </label>
+                    </form>
+                  </li>
                 </ul>
-            <nav class="menu-nav">
-                <ul class="menu-nav-list">
-                    <li class="menu-nav-burger-item">
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__burger-item">
                         <input class ="menu-burger" id="menu" type="checkbox">
-                        <label class="menu-btn" for="menu"><svg class="icon-menu" width="32" height="23" viewBox="0 0 32 23" xmlns="http://www.w3.org/2000/svg">
+                        <label class="menu-btn" for="menu">
+                          <svg class="icon-menu" width="32" height="23" viewBox="0 0 32 23" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 23V20.31H32V23H0ZM0 12.76V10.07H32V12.76H0ZM0 2.69V0H32V2.69H0Z"/>
                         </svg></label>
                         <div class="box">
                             <ul class="menu-list">
-                                <li class="menu-list-item">
-                                  <a href="#" class="menu-list-close-btn"></a>
+                                <li class="menu-list__item">
+                                  <a href="#" class="menu-list__close-btn"></a>
                                 </li>
-                                <li class="menu-list-item">
-                                  <span class="menu-list-title">menu</span>
+                                <li class="menu-list__item">
+                                  <span class="menu-list__title">menu</span>
                                 </li>
-                                <li class="menu-list-item">
+                                <li class="menu-list__item">
                                   <a href="#">man</a>
                                 </li>
-                                <li class="menu-list-item">
+                                <li class="menu-list__item">
                                   <ul class="menu-sublist">
-                                    <li class="menu-sublist-item">
+                                    <li class="menu-sublist__item">
                                       <a href="#">Accessories</a>
                                     </li>
-                                    <li class="menu-sublist-item">
+                                    <li class="menu-sublist__item">
                                       <a href="#">Bags</a>
                                     </li>
-                                    <li class="menu-sublist-item">
+                                    <li class="menu-sublist__item">
                                       <a href="#">Denim</a>
                                     </li>
-                                    <li class="menu-sublist-item">
+                                    <li class="menu-sublist__item">
                                       <a href="#">T-Shirts</a>
                                     </li>
                                   </ul>
                                 </li>
-                                <li class="menu-list-item">
+                                <li class="menu-list__item">
                                   <a href="#">woman</a>
                                 </li>
-                                <li class="menu-list-item">
+                                <li class="menu-list__item">
                                   <ul class="menu-sublist">
-                                    <li class="menu-sublist-item">
+                                    <li class="menu-sublist__item">
                                       <a href="#">Accessories</a>
                                     </li>
-                                    <li class="menu-sublist-item">
+                                    <li class="menu-sublist__item">
                                       <a href="#">Jackets &amp;&nbsp;Coats</a>
                                     </li>
-                                    <li class="menu-sublist-item">
+                                    <li class="menu-sublist__item">
                                       <a href="#">Polos</a>
                                     </li>
-                                    <li class="menu-sublist-item">
+                                    <li class="menu-sublist__item">
                                       <a href="#">T-Shirts</a>
                                     </li>
-                                    <li class="menu-sublist-item">
+                                    <li class="menu-sublist__item">
                                       <a href="#">Shirts</a>
                                     </li>
                                   </ul>
                                 </li>
-                                <li class="menu-list-item">
+                                <li class="menu-list__item">
                                   <a href="#">kids</a>
                                 </li>
-                                <li class="menu-list-item">
+                                <li class="menu-list__item">
                                   <ul class="menu-sublist">
-                                    <li class="menu-sublist-item">
+                                    <li class="menu-sublist__item">
                                       <a href="#">Accessories</a>
                                     </li>
-                                    <li class="menu-sublist-item">
+                                    <li class="menu-sublist__item">
                                       <a href="#">Jackets &amp;&nbsp;Coats</a>
                                     </li>
-                                    <li class="menu-sublist-item">
+                                    <li class="menu-sublist__item">
                                       <a href="#">Polos</a>
                                     </li>
-                                    <li class="menu-sublist-item">
+                                    <li class="menu-sublist__item">
                                       <a href="#">T-Shirts</a>
                                     </li>
-                                    <li class="menu-sublist-item">
+                                    <li class="menu-sublist__item">
                                       <a href="#">Shirts</a>
                                     </li>
-                                    <li class="menu-sublist-item">
+                                    <li class="menu-sublist__item">
                                       <a href="#">Bags</a>
                                     </li>
                                   </ul>
@@ -107,7 +116,8 @@
                               </ul>
                         </div>
                         </li>
-                    <li class="menu-nav-user-item"><a class="menu-nav-user-link" href="#"><svg class="icon-menu" width="29" height="29" viewBox="0 0 29 29"  xmlns="http://www.w3.org/2000/svg">
+                    <li class="menu-nav-user-item">
+                      <a class="menu-nav-user-link" href="#"><svg class="icon-menu" width="29" height="29" viewBox="0 0 29 29"  xmlns="http://www.w3.org/2000/svg">
                         <path d="M14.5 19.937C19 19.937 22.656 15.464 22.656 9.968C22.656 4.472 19 0 14.5 0C13.3631 0.0217413 12.2463 0.303398 11.2351 0.823397C10.2239 1.34339 9.34507 2.08794 8.66602 3C7.12663 4.99573 6.30819 7.45381 6.34399 9.974C6.34399 15.465 10 19.937 14.5 19.937ZM14.5 1.813C18 1.813 20.844 5.472 20.844 9.969C20.844 14.466 17.998 18.125 14.5 18.125C11.002 18.125 8.15603 14.465 8.15503 9.969C8.15403 5.473 11 1.813 14.5 1.813ZM20.844 18.125C20.6036 18.125 20.373 18.2205 20.203 18.3905C20.033 18.5605 19.9375 18.7911 19.9375 19.0315C19.9375 19.2719 20.033 19.5025 20.203 19.6725C20.373 19.8425 20.6036 19.938 20.844 19.938C22.526 19.9399 24.1386 20.6088 25.3279 21.7982C26.5172 22.9875 27.1861 24.6 27.188 26.282C27.1875 26.5221 27.0918 26.7523 26.922 26.9221C26.7522 27.0918 26.5221 27.1875 26.282 27.188H2.71997C2.47985 27.1875 2.24975 27.0918 2.07996 26.9221C1.91016 26.7523 1.81449 26.5221 1.81396 26.282C1.81608 24.6001 2.48517 22.9877 3.67444 21.7985C4.86371 20.6092 6.47608 19.9401 8.15796 19.938C8.39824 19.938 8.62868 19.8425 8.79858 19.6726C8.96849 19.5027 9.06396 19.2723 9.06396 19.032C9.06396 18.7917 8.96849 18.5613 8.79858 18.3914C8.62868 18.2215 8.39824 18.126 8.15796 18.126C5.99541 18.1279 3.92201 18.9875 2.39258 20.5164C0.863144 22.0453 0.00264777 24.1185 0 26.281C0.000794067 27.0019 0.287502 27.693 0.797241 28.2027C1.30698 28.7125 1.99811 28.9992 2.71899 29H26.282C27.0027 28.9989 27.6936 28.7121 28.2031 28.2024C28.7126 27.6927 28.9992 27.0017 29 26.281C28.9974 24.1187 28.1372 22.0457 26.6083 20.5168C25.0793 18.9878 23.0063 18.1276 20.844 18.125Z"/>
                         </svg>
                         </a></li>
@@ -122,16 +132,16 @@
         </div>
     </div>
   </header>
-  <main>
-    <section class="top-content-backgroung">
-        <div class="top-content center">
-            <div class="top-content-img">
+  <main class="main">
+    <section class="main__content-backgroung">
+        <div class="main__content center">
+            <div class="main__content-img">
             </div>
-            <div class="top-content-logo">
-                <div class="top-content-info">
-                    <h2 class="top-content-title">
+            <div class="main__content-logo">
+                <div class="main__content-info">
+                    <h2 class="main__content-title">
                         the brand
-                        <span class="top-content-subtitle">
+                        <span class="main__content-subtitle">
                           of luxerious <span>fashion</span>
                         </span>
                       </h2>
@@ -140,120 +150,137 @@
         </div>
     </section> 
 <section class="advantages center">
-        <div class="advantages-top">
-            <ul class="advantages-top-list">
+        <div class="advantages__top">
+            <ul class="advantages__top-list">
                 <li>
-                    <div class="advantages-top-item women">
-                        <a class="advantages-top-link" href="#">30% off <br><span class="color-txt">for women</span></a> 
+                    <div class="advantages__top-item women">
+                        <a class="advantages__top-link" href="#">30% off <br><span class="color-txt">for women</span></a> 
                     </div>
                 </li>
                 <li>
-                    <div class="advantages-top-item men">
-                        <a class="advantages-top-link"  href="#">hot deal <br><span class="color-txt">for men</span></a> 
+                    <div class="advantages__top-item men">
+                        <a class="advantages__top-link"  href="#">hot deal <br><span class="color-txt">for men</span></a> 
                     </div>
                 </li>
                 <li>
-                    <div class="advantages-top-item kids">
-                        <a class="advantages-top-link" href="#">new arrivals <br><span class="color-txt">for kids</span></a> 
+                    <div class="advantages__top-item kids">
+                        <a class="advantages__top-link" href="#">new arrivals <br><span class="color-txt">for kids</span></a> 
                     </div>
                 </li>
-                <li class="advantages-list-item-big">
-                    <div class="advantages-top-item advantages-top-item__big">
-                        <a class="advantages-top-link" href="#">luxerious &amp;&nbsp;trendy<br><span class="color-txt">accesories</span></a> 
+                <li class="advantages__list-item-big">
+                    <div class="advantages__top-item advantages-top-item__big">
+                        <a class="advantages__top-link" href="#">luxerious &amp;&nbsp;trendy<br><span class="color-txt">accesories</span></a> 
                    </div>
                 </li>
             </ul>
             </div>
         </section>
         <section class="product center">
-            <div class="product-info">
-                <h2 class="product-title">Fetured Items</h2>
-                <p class="product-info-txt">Shop for items based on&nbsp;what we&nbsp;featured in&nbsp;this week</p>
+            <div class="product__info">
+                <h2 class="product__title">Fetured Items</h2>
+                <p class="product__info-txt">Shop for items based on&nbsp;what we&nbsp;featured in&nbsp;this week</p>
             </div>
-            <div class="product-content">
-              <ul class="product-content-list">
+            <div class="product__content">
+              <ul class="product__content-list">
               </ul>
             </div>
-            <div class="content-btn">
-                <button class="content-button">Browse All Product</button>
+            <div class="product__content-btn">
+                <a href="product.html" class="product__content-button">Browse All Product</a>
             </div>
         </section>
         <section class="promo">
-            <div class="promo-info center">
-                <ul class="promo-info-list">
-                    <li class="promo-info-item">
-                        <div class="promo-content">
-                        <div class="promo-icon__delivery"></div>
-                        <h3 class="promo-title">Free Delivery</h3>
-                        <p class="promo-txt">Worldwide delivery on&nbsp;all. Authorit tively morph next-generation innov tion with extensive models.</p>
+            <div class="promo__info center">
+                <ul class="promo__info-list">
+                    <li class="promo__info-item">
+                        <div class="promo__content">
+                        <div class="promo__icon-delivery"></div>
+                        <h3 class="promo__title">Free Delivery</h3>
+                        <p class="promo__txt">Worldwide delivery on&nbsp;all. Authorit tively morph next-generation innov tion with extensive models.</p>
                         </div>
                     </li>
-                    <li class="promo-info-item">
-                        <div class="promo-content">
-                        <div class="promo-icon__discount"></div>
-                        <h3 class="promo-title">Sales &amp;&nbsp;discounts</h3>
-                        <p class="promo-txt">Worldwide delivery on&nbsp;all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                    <li class="promo__info-item">
+                        <div class="promo__content">
+                        <div class="promo__icon-discount"></div>
+                        <h3 class="promo__title">Sales &amp;&nbsp;discounts</h3>
+                        <p class="promo__txt">Worldwide delivery on&nbsp;all. Authorit tively morph next-generation innov tion with extensive models.</p>
                         </div>
                     </li>
-                    <li class="promo-info-item">
-                        <div class="promo-content">
-                        <div class="promo-icon__assurance"></div>
-                        <h3 class="promo-title">Quality assurance</h3>
-                        <p class="promo-txt">Worldwide delivery on&nbsp;all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                    <li class="promo__info-item">
+                        <div class="promo__content">
+                        <div class="promo__icon-assurance"></div>
+                        <h3 class="promo__title">Quality assurance</h3>
+                        <p class="promo__txt">Worldwide delivery on&nbsp;all. Authorit tively morph next-generation innov tion with extensive models.</p>
                          </div>
                     </li>
                 </ul>
             </div>
         </section>
-      </main>
-      <div class="product-box-wrp center">
+      <div class="product__box-wrp center">
         <ul class="product__box"></ul>
       </div>
+    </main>
         <footer class="footer">
-            <section class="feedback-info center">
-                    <div class="feedback-info-content">
-                    <div class="feedback-photo"><img src="img/background-feedback.png" alt="" height="96"></div>
-                    <p class="feedback-txt">&quot;Vestibulum quis porttitor dui! Quisque viverra nunc&nbsp;mi,<i>a&nbsp;pulvinar purus condimentum&quot;</i></p>
+            <section class="footer__feedback-info center">
+                    <div class="footer__feedback-info-content">
+                    <div class="footer__feedback-photo">
+                      <img src="img/background-feedback.png" alt="" height="96"></div>
+                    <p class="footer__feedback-txt">&quot;Vestibulum quis porttitor dui! Quisque viverra nunc&nbsp;mi,<i>a&nbsp;pulvinar purus condimentum&quot;</i></p>
                 </div>
-                <div class="feedback-form">
-                    <div class="feedback-form-info"><h3 class="feedback-title">SUBSCRIBE 
+                <div class="footer__feedback-form">
+                    <div class="footer__feedback-form-info">
+                      <h3 class="footer__feedback-title">SUBSCRIBE 
                         <span class="text-decoration">FOR OUR NEWLETTER AND PROMOTION</span> </h3>
                         </div>
-                    <div class="form">
+                    <div class="footer__form">
                         <form action="#" class="subscription">
-                        <input class="form-email" required  placeholder="Enter Your Email" type="email">
-                        <button class="form-submit" type="submit">Subscribe</button>
+                        <input class="footer__form-email" required  placeholder="Enter Your Email" type="email">
+                        <button class="footer__form-submit" type="submit">Subscribe</button>
                     </form>
                     </div>
                 </div>
         </section>
-        <section class="footer-wrp">
+        <section class="footer__wrp">
         <div class="copyright center ">
-            <p class="copyright-txt">&copy;&nbsp;2022 Brand All Rights Reserved.</p>
+            <p class="copyright__txt">&copy;&nbsp;2022 Brand All Rights Reserved.</p>
             <div class="network">
-                <ul class="network-logos-list">
+                <ul class="network__logos-list">
                     <li>
-                        <div class="network-logos-item"><a class="network-logos-link" href="https://www.facebook.com/" target="_blank"><svg class="network-svg network-svg__facebook" width="9" height="15" viewBox="0 0 9 15"  xmlns="http://www.w3.org/2000/svg">
+                        <div class="network__logos-item">
+                          <a class="network__logos-link" href="https://www.facebook.com/" target="_blank"><svg class="network__svg network__svg-facebook" width="9" height="15" viewBox="0 0 9 15"  xmlns="http://www.w3.org/2000/svg">
                             <path d="M8.08836 8.28L8.50686 5.61602H5.89022V3.88729C5.89022 3.15848 6.25574 2.44806 7.42765 2.44806H8.61722V0.179975C8.61722 0.179975 7.53772 0 6.50561 0C4.35073 0 2.9422 1.27593 2.9422 3.5857V5.61602H0.546875V8.28H2.9422V14.72H5.89022V8.28H8.08836Z" />
-                            </svg></a> </div></li> 
+                            </svg>
+                          </a></div>
+                        </li> 
                     <li>
-                        <div class="network-logos-item"><a class="network-logos-link" href="https://instagram.com/" target="_blank"><svg class="network-svg network-svg__instagram"width="16" height="15" viewBox="0 0 16 15"  xmlns="http://www.w3.org/2000/svg">
+                        <div class="network__logos-item">
+                          <a class="network__logos-link" href="https://instagram.com/" target="_blank">
+                            <svg class="network__svg network__svg-instagram"width="16" height="15" viewBox="0 0 16 15"  xmlns="http://www.w3.org/2000/svg">
                             <path d="M8.13677 3.68162C6.02163 3.68162 4.31555 5.38494 4.31555 7.49666C4.31555 9.60838 6.02163 11.3117 8.13677 11.3117C10.2519 11.3117 11.958 9.60838 11.958 7.49666C11.958 5.38494 10.2519 3.68162 8.13677 3.68162ZM8.13677 9.97693C6.76991 9.97693 5.65248 8.86463 5.65248 7.49666C5.65248 6.12869 6.76658 5.01639 8.13677 5.01639C9.50695 5.01639 10.6211 6.12869 10.6211 7.49666C10.6211 8.86463 9.50363 9.97693 8.13677 9.97693ZM13.0056 3.52557C13.0056 4.02029 12.6065 4.41541 12.1143 4.41541C11.6188 4.41541 11.223 4.01697 11.223 3.52557C11.223 3.03416 11.6221 2.63572 12.1143 2.63572C12.6065 2.63572 13.0056 3.03416 13.0056 3.52557ZM15.5364 4.42869C15.4799 3.2367 15.2072 2.18084 14.3325 1.31092C13.4612 0.440997 12.4036 0.168732 11.2097 0.108966C9.9792 0.0392395 6.29101 0.0392395 5.0605 0.108966C3.8699 0.165411 2.81233 0.437677 1.93768 1.3076C1.06302 2.17752 0.793639 3.23338 0.733776 4.42537C0.663937 5.65389 0.663937 9.33611 0.733776 10.5646C0.790313 11.7566 1.06302 12.8125 1.93768 13.6824C2.81233 14.5523 3.86658 14.8246 5.0605 14.8844C6.29101 14.9541 9.9792 14.9541 11.2097 14.8844C12.4036 14.8279 13.4612 14.5556 14.3325 13.6824C15.2039 12.8125 15.4766 11.7566 15.5364 10.5646C15.6063 9.33611 15.6063 5.65721 15.5364 4.42869ZM13.9468 11.8828C13.6874 12.5336 13.1852 13.0349 12.53 13.2972C11.5489 13.6857 9.22094 13.5961 8.13677 13.5961C7.05259 13.5961 4.72128 13.6824 3.74353 13.2972C3.09169 13.0383 2.58951 12.5369 2.32678 11.8828C1.93768 10.9033 2.02747 8.57908 2.02747 7.49666C2.02747 6.41424 1.941 4.0867 2.32678 3.11053C2.58619 2.45975 3.08837 1.95838 3.74353 1.69608C4.72461 1.3076 7.05259 1.39725 8.13677 1.39725C9.22094 1.39725 11.5523 1.31092 12.53 1.69608C13.1818 1.95506 13.684 2.45643 13.9468 3.11053C14.3359 4.09002 14.2461 6.41424 14.2461 7.49666C14.2461 8.57908 14.3359 10.9066 13.9468 11.8828Z"/>
-                            </svg></a></div></li>
+                            </svg></a>
+                          </div>
+                        </li>
                     <li>
-                        <div class="network-logos-item pinteres"><a class="network-logos-link" href="https://ru.pinterest.com/" target="_blank"><svg class="network-svg network-svg__pinteres" width="13" height="16" viewBox="0 0 13 16"  xmlns="http://www.w3.org/2000/svg">
+                        <div class="network__logos-item pinteres">
+                          <a class="network__logos-link" href="https://ru.pinterest.com/" target="_blank">
+                            <svg class="network__svg network__svg-pinteres" width="13" height="16" viewBox="0 0 13 16"  xmlns="http://www.w3.org/2000/svg">
                             <path d="M6.7402 0.203125C3.55552 0.203125 0.408081 2.34063 0.408081 5.8C0.408081 8 1.63726 9.25 2.38221 9.25C2.68951 9.25 2.86643 8.3875 2.86643 8.14375C2.86643 7.85313 2.13079 7.23438 2.13079 6.025C2.13079 3.5125 4.03043 1.73125 6.48878 1.73125C8.60259 1.73125 10.167 2.94062 10.167 5.1625C10.167 6.82187 9.50585 9.93437 7.3641 9.93437C6.59121 9.93437 5.93006 9.37187 5.93006 8.56563C5.93006 7.38438 6.74951 6.24062 6.74951 5.02187C6.74951 2.95312 3.83487 3.32812 3.83487 5.82812C3.83487 6.35313 3.90006 6.93437 4.13286 7.4125C3.70451 9.26875 2.82919 12.0344 2.82919 13.9469C2.82919 14.5375 2.91299 15.1188 2.96886 15.7094C3.0744 15.8281 3.02163 15.8156 3.18304 15.7563C4.74744 13.6 4.69157 13.1781 5.39928 10.3562C5.78107 11.0875 6.76814 11.4812 7.55034 11.4812C10.8468 11.4812 12.3274 8.24688 12.3274 5.33125C12.3274 2.22813 9.66415 0.203125 6.7402 0.203125Z" />
-                            </svg></a></div></li>
+                            </svg>
+                          </a></div>
+                        </li>
                     <li>
-                        <div class="network-logos-item twitter"><a class="network-logos-link" href="https://twitter.com/" target="_blank"><svg class="network-svg network-svg__twitter" width="17" height="14" viewBox="0 0 17 14"  xmlns="http://www.w3.org/2000/svg">
+                        <div class="network__logos-item twitter">
+                          <a class="network__logos-link" href="https://twitter.com/" target="_blank">
+                            <svg class="network__svg network__svg-twitter" width="17" height="14" viewBox="0 0 17 14"  xmlns="http://www.w3.org/2000/svg">
                             <path d="M14.4181 3.74107C14.4281 3.88319 14.4281 4.02535 14.4281 4.16747C14.4281 8.50247 11.1509 13.4974 5.16096 13.4974C3.31558 13.4974 1.60132 12.9593 0.159302 12.0253C0.421495 12.0558 0.673569 12.0659 0.94585 12.0659C2.46851 12.0659 3.8702 11.5482 4.98953 10.6649C3.5576 10.6345 2.3576 9.69032 1.94415 8.39081C2.14585 8.42125 2.34751 8.44156 2.5593 8.44156C2.85172 8.44156 3.14418 8.40094 3.41643 8.32991C1.92401 8.02531 0.80465 6.70553 0.80465 5.11163V5.07103C1.23825 5.31469 1.74249 5.46697 2.2769 5.48725C1.39959 4.89841 0.824826 3.89335 0.824826 2.75628C0.824826 2.14716 0.98614 1.58878 1.26851 1.10147C2.87187 3.09131 5.28195 4.39078 7.98443 4.53294C7.93403 4.28928 7.90376 4.0355 7.90376 3.78169C7.90376 1.97457 9.35586 0.502502 11.1609 0.502502C12.0987 0.502502 12.9457 0.89844 13.5407 1.53803C14.2768 1.39591 14.9827 1.12178 15.6079 0.746159C15.3659 1.5076 14.8516 2.14719 14.176 2.55325C14.8315 2.48222 15.4668 2.29944 16.0516 2.04566C15.608 2.69538 15.0533 3.27403 14.4181 3.74107Z"/>
                             </svg>
-                            </a></div></li>
+                            </a>
+                          </div>
+                        </li>
                 </ul>
             </div>
         </div>
     </section>
         </footer>
-        <script type="module" src="index.js"></script>
+        <script type="module" src="js/index.js"></script>
 </body>
 </html>
