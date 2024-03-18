@@ -6,6 +6,7 @@
 @import "./main";
 @import "./footer";
 @import "./product";
+@import "./catalog";
 
 
 body {
@@ -75,8 +76,10 @@ body {
     min-height: 634px;
     background-color: #FFFFFF;
     position: absolute;
+    box-shadow: 6px 4px 35px 0 rgba(0, 0, 0, 0.21);
     top: 80px;
     right:0;
+    transition: right 1s;
     z-index: 20;
 }
 input[type="checkbox"] {

@@ -84,3 +84,13 @@ function nextSlide() {
 function rollSlider() {
   sliderLine.style.transform = `translateX(${-sliderCount * sliderWidth}px)`;
 }
+
+const boxMenu = document.querySelector('.box');
+const menuBtn = document.querySelector('.menu-burger');
+const menuClose = document.querySelector('.menu-list__close-btn');
+menuBtn.addEventListener('click', () => {
+  boxMenu.style.display = 'block';
+});
+menuClose.addEventListener('click', () => {
+  boxMenu.style.display = 'none';
+});
