@@ -97,7 +97,7 @@ position: relative;
   border: 1px solid rgb(234, 234, 234);
   padding: 65px 0 65px 0;
   background: #ffff;
-  margin-top: -65px;
+  margin: -65px 0 128px 0;
   &__title {
     position: relative;
     font-weight: 400;
@@ -178,5 +178,5 @@ position: relative;
 
 }
 .product__container {
-  padding: 128px 0 128px 0;
+  margin-bottom: 128px;
 }
