@@ -608,6 +608,7 @@
   font-weight: 400;
   font-size: 24px;
   color: #F16D7F;
+  text-transform: uppercase;
 }
 .headding__wrp {
   display: flex;

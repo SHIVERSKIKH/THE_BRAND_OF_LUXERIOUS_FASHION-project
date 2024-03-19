@@ -5,6 +5,7 @@
     font-weight: 400;
     font-size: 24px;
     color: $colorPink;
+    text-transform: uppercase
   }
   &__wrp {
     @include flexSpaceBetween;
