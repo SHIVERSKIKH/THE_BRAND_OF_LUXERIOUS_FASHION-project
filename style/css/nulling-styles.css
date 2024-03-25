@@ -3,7 +3,8 @@
 *::after,
 ul,
 h1
-p {
+p,
+fieldset {
 	padding: 0;
 	margin: 0;
 	border: 0;

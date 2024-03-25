@@ -40,72 +40,40 @@ productData.forEach(({id,image, name, description, price}) => {
 
 
 
-const cardItemsTitle = document.createElement('h2');
 
 window.addEventListener('click', function (event) {
   if(event.target.hasAttribute('data-cart')) {
-    const card = event.target.closest('.product__item');
-    const productInfo = {
-      id:card.dataset.id,
-      imgSrc: card.querySelector('.product__item-photo').getAttribute('src'),
-      title: card.querySelector('.product__content-title').innerText,
-      price:card.querySelector('.product__price').innerText,
-      discription:card.querySelector('.product__content-txt').innerText,
-      quanty:1
-    };
+      const card = event.target.closest('.product__item');
 
-    
-    if(ul.children.length === 0) {
-      cardItemsTitle.classList.add('text__title');
-      cardItemsTitle.innerText = 'Cart Items';
-      cardItemsTitle.setAttribute('id', '001');
-      productWrp.insertBefore(cardItemsTitle, productWrp.firstChild);
-    }
-    const itemInCart = document.querySelector(`[data-id="${productInfo.id}"]`);
-    if(itemInCart) {
-      alert('Товар в корзину добавлен');
-    }
+      // Получение информации о продукте
+      const productInfo = {
+          id: card.dataset.id,
+          imgSrc: card.querySelector('.product__item-photo').getAttribute('src'),
+          title: card.querySelector('.product__content-title').innerText,
+          price: card.querySelector('.product__price').innerText,
+          description: card.querySelector('.product__content-txt').innerText,
+          quantity: 2
+      };
+      const itemInCart = document.querySelector(`[data-id="${productInfo.id}"]`);
+      if(itemInCart) {
+        alert('Товар в корзину добавлен');
+      }
+      // Получение текущего корзины в LocalStorage
+      let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
 
-    const cartItemHTML = `
-  <li data-id="${productInfo.id}" class="product product__width ">
-                <button class="btn__del" type="button">Удалить</button>
-                <div class="products__content">
-                  <img class="products__img" src="${productInfo.imgSrc}" alt="img" </img>
-                  <div class="products__desc">
-                    <h2 class="products__name">${productInfo.title}</h2>
-                    <p class="products__discription">${productInfo.discription}</p>
-                    <p class="products__price_label margin-bottom">
-                      Price: <span class="products__price">${productInfo.price}</span>
-                    </p>
-                  </div>
-                </div>
-              </li> `;
+      // Добавление нового продукта в корзину
+      cartItems.push(productInfo);
 
-             
-              ul.insertAdjacentHTML('beforeend', cartItemHTML);
-              spanQuantity.innerText = ul.children.length; 
-              spanQuantity.classList.add('quantity__count'); 
-              
-              const deleteButtons = document.querySelectorAll('.btn__del');
+      // Сохранение обновленной корзины в LocalStorage
+      localStorage.setItem('cartItems', JSON.stringify(cartItems));
 
-              deleteButtons.forEach(button => {
-                  button.addEventListener('click', () => {
-                      const product = button.closest('.product');
-                      product.remove();
-                      spanQuantity.innerText = ul.children.length; 
+      spanQuantity.classList.add('quantity__count');
+      spanQuantity.textContent = cartItems.length;
 
-                      
-                      if(ul.children.length === 0) {
-                        cardItemsTitle.remove();
-                        spanQuantity.classList.remove('quantity__count');
-                        spanQuantity.innerText = ''; 
-                      }
-                  })
-                });
             }
+});
 
-  
-            });
+
             
 const boxMenu = document.querySelector('.box');
 const menuBtn = document.querySelector('.menu-burger');
