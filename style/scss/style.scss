@@ -15,9 +15,10 @@ body {
     font-family: 'Lato', sans-serif;
 }
 .center {
-    max-width: 1140px;
+    max-width: 1120px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 20px;
 }
 .wrp-width {
     max-width: 1600px;
@@ -204,9 +205,6 @@ input[type="checkbox"]:checked ~ .box {
     }
 } 
 @media (max-width:1024px) {
-    .center {
-        max-width: 768px;
-    }
     .header__menu {
         gap: 424px;
     }
@@ -239,7 +237,7 @@ input[type="checkbox"]:checked ~ .box {
    } 
 }
    .advantages__top-item {
-    max-width: 243px;
+    max-width: 300px;
     min-height: 168px;
    }
    .women {
@@ -252,7 +250,7 @@ input[type="checkbox"]:checked ~ .box {
     padding: 58px 58px 59px 58px;
    }
    .advantages-top-item__big {
-    max-width: 768px;
+    max-width: 928px;
     min-height: 116px;
     padding: 33px 287px;
     margin: 0 0 109px 0;
@@ -275,9 +273,9 @@ input[type="checkbox"]:checked ~ .box {
         justify-content: center;
         flex-direction: column;
     }
-    &__feedback-photo {
-        margin: 53px;
-    }
+    .footer__feedback-photo {
+        margin: 64px auto 30px;
+      }
     &__feedback-txt {
         margin: 0 0 48px 0;
     }
@@ -293,7 +291,7 @@ input[type="checkbox"]:checked ~ .box {
     margin: 0 0 140px 0;
 }
 .copyright {
-    gap: 305px;
+    gap: 275px;
     &__txt {
         max-width: 251px;
     }
@@ -304,9 +302,6 @@ input[type="checkbox"]:checked ~ .box {
 }
 }
 @media (max-width:767px) {
-    .center {
-        max-width: 343px;
-    }
     .header__menu {
         gap:0; 
     }
@@ -340,7 +335,7 @@ input[type="checkbox"]:checked ~ .box {
         justify-content: center;
     }
     .advantages__top-item {
-        max-width: 343px;
+        max-width: 381px;
         min-height: 247px;
         width: 100%;
     }
@@ -361,7 +356,7 @@ input[type="checkbox"]:checked ~ .box {
         grid-row: span 1;
     }
     .advantages-top-item__big {
-        max-width: 343px;
+        max-width: 381px;
         min-height: 111px;
         width: 100%;
         padding: 30px 91px 31px 92px;

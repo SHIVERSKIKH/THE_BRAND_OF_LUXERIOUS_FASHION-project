@@ -1,16 +1,16 @@
 import { dataProductsBox } from "./data.js";
 const productData = JSON.parse(dataProductsBox);
-const productBox = document.querySelector('.product__content-list');
-const productWrp = document.querySelector('.product__box-wrp');
+const productBox = document.querySelector(".product__content-list");
+const productWrp = document.querySelector(".product__box-wrp");
 let count = 0;
 
-const spanQuantity = document.querySelector('.quantity');
+const spanQuantity = document.querySelector(".quantity");
 
 //Ловим сам список
-const ul = document.querySelector('.product__box');
-productData.forEach(({id,image, name, description, price}) => {
-    if(count < 3) {
-        const productEl = `
+const ul = document.querySelector(".product__box");
+productData.forEach(({ id, image, name, description, price }) => {
+  if (count < 3) {
+    const productEl = `
         <li data-id="${id}" class="product__item">
             <div class="product__content-item">
                 <div class="product__content-img">
@@ -29,12 +29,10 @@ productData.forEach(({id,image, name, description, price}) => {
             </div>
         </li>
         `;
-        productBox.insertAdjacentHTML('beforeend', productEl);
-        count++;
-    }
-
+    productBox.insertAdjacentHTML("beforeend", productEl);
+    count++;
+  }
 });
-
 const sliderItems = document.querySelectorAll(".slider-item");
 const sliderLine = document.querySelector(".slider-line");
 const sliderPrev = document.querySelector(".slider-prev");
@@ -85,12 +83,12 @@ function rollSlider() {
   sliderLine.style.transform = `translateX(${-sliderCount * sliderWidth}px)`;
 }
 
-const boxMenu = document.querySelector('.box');
-const menuBtn = document.querySelector('.menu-burger');
-const menuClose = document.querySelector('.menu-list__close-btn');
-menuBtn.addEventListener('click', () => {
-  boxMenu.style.display = 'block';
+const boxMenu = document.querySelector(".box");
+const menuBtn = document.querySelector(".menu-burger");
+const menuClose = document.querySelector(".menu-list__close-btn");
+menuBtn.addEventListener("click", () => {
+  boxMenu.style.display = "block";
 });
-menuClose.addEventListener('click', () => {
-  boxMenu.style.display = 'none';
+menuClose.addEventListener("click", () => {
+  boxMenu.style.display = "none";
 });

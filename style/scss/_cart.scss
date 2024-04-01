@@ -5,6 +5,7 @@
     max-width: 1140px;
     width: 100%;
     @include flexSpaceBetween;
+    align-items: flex-start;
     margin: 0 0 72px 0;
   }
   &__items {
@@ -105,7 +106,7 @@
   &__checkout {
     max-width: 360px;
     width: 100%;
-    min-height: 214px;
+    height: 214px;
     background: rgb(245, 243, 243);
     padding: 39px 37px 42px 43px;
     display: flex;
@@ -170,6 +171,9 @@
     font-size: 14px;
     color: #000;
   }
+  &__buttons-mob {
+    display: none;
+  }
 }
 .input-color {
   color: #b1b1b1;
@@ -185,4 +189,106 @@
   position: absolute;
   top: 28px;
   right: 22px;
+}
+@media(max-width:1158px) {
+  .cart__items {
+    margin: 0 auto 72px;
+  }
+  .cart__form {
+    display: flex;
+    gap: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .cart {
+    padding: 96px 0 56px 0;
+    &__items {
+      max-width: 734px;
+      margin: 0 0 62px 0;
+    }
+    &__item {
+      max-width: 734px;
+    }
+    &__buttons {
+      display: none;
+    }
+    &__buttons-mob {
+      display: flex;
+      max-width: 508px;
+      margin: 0 auto 64px;
+    }
+    &__form {
+      display: flex;
+      gap: 15px;
+    }
+    &__checkout {
+      padding: 39px 34px 42px 43px;
+    }
+  }
+}
+@media (max-width: 764px) {
+  .cart__form {
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 560px) {
+  .cart__container {
+    padding: 13px 53px 37px 17px;
+  }
+  .cart__items {
+    max-width: 358px;
+    margin: 0 auto 30px;
+  }
+  .cart__item {
+    max-width: 358px;
+    height: 188px;
+  }
+  .cart__img-wrp {
+    width: 143px;
+    height: 188px;
+  }
+  .cart__img-wrp img {
+    width: 143px;
+    height: 188px;
+  }
+  .cart__title {
+    font-size: 16px;
+    margin: 0 0 25px 0;
+  }
+  .cart__txt {
+    font-size: 14px;
+  }
+  .cart__txt:not(:last-child) {
+    margin: 0 0 4px 0;
+  }
+  .cart__quantity {
+    width: 24px;
+    height: 15px;
+    font-size: 10px;
+  }
+  .cart__buttons-mob {
+    max-width: 359px;
+    margin: 0 auto 48px;
+  }
+  .cart__button {
+    width: 154px;
+    font-size: 10px;
+    padding: 9px 18px;
+    height: 33px;
+  }
+  .btn__del {
+    top: 13px;
+  }
+  .btn__del svg {
+    width: 9px;
+    height: 11px;
+  }
+  .cart__form-input {
+    width: 318px;
+  }
+  .cart__checkout-btn {
+    max-width: 273px;
+    font-size: 13px;
+  }
 }

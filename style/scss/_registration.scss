@@ -12,59 +12,60 @@
     display: flex;
     gap: 20px;
     span {
-        display: block;
-        width: 17px;
-        height: 10px;
+      display: block;
+      width: 17px;
+      height: 10px;
     }
-}
-&__wrapper {
-  max-width: 1140px;
-  width: 100%;
-  @include flexSpaceBetween;
-  align-items: flex-start;
-}
-&__info {
-  max-width: 652px;
-  width: 100%;
-}
-&__heading{
-  font-weight: 400;
-  font-size: 24px;
-  color: #000;
-  margin: 0 0 22px 0;
-}
-&__txt {
-  max-width: 652px;
-  width: 100%;
-  font-weight: 400;
-  font-size: 24px;
-  color: #000;
-  margin: 0 0 21px 0;
-}
-&__list {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-&__item {
-  position: relative;
-  font-weight: 400;
-  font-size: 24px;
-  color: #000;
-  display: flex;
-  align-items: center;
-  padding-left: 44px;
-}
-&__item::before {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 16px;
-  background: url(../../img/gal.png);
-  @include backgroundCenterCover;
-  right: 0;
-  left: 0;
-}
+  }
+  &__wrapper {
+    max-width: 1140px;
+    width: 100%;
+    @include flexSpaceBetween;
+    align-items: flex-start;
+    gap: 22px;
+  }
+  &__info {
+    max-width: 652px;
+    width: 100%;
+  }
+  &__heading {
+    font-weight: 400;
+    font-size: 24px;
+    color: #000;
+    margin: 0 0 22px 0;
+  }
+  &__txt {
+    max-width: 652px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 24px;
+    color: #000;
+    margin: 0 0 21px 0;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  &__item {
+    position: relative;
+    font-weight: 400;
+    font-size: 24px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    padding-left: 44px;
+  }
+  &__item::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 16px;
+    background: url(../../img/gal.png);
+    @include backgroundCenterCover;
+    right: 0;
+    left: 0;
+  }
 }
 .form__wrp {
   max-width: 360px;
@@ -98,8 +99,8 @@
 .box__input {
   display: block !important;
   border-radius: 100%;
-    box-sizing: border-box;
-    border: 1px solid rgb(164, 164, 164);
+  box-sizing: border-box;
+  border: 1px solid rgb(164, 164, 164);
 }
 .box__input-wrp {
   display: flex;
@@ -117,14 +118,35 @@
   justify-content: space-between;
 }
 .form__txt {
-    display: block;
-    font-weight: 400;
-    font-size: 13px;
-    color: #b1b1b1;
-    max-width: 360px;
-    width: 100%;
-    margin: 0 0 39px 0;
+  display: block;
+  font-weight: 400;
+  font-size: 13px;
+  color: #b1b1b1;
+  max-width: 360px;
+  width: 100%;
+  margin: 0 0 39px 0;
 }
 .input-wrp_margin {
-    margin: 0 0 15px 0;
+  margin: 0 0 15px 0;
+}
+@media (max-width: 769px) {
+  .registration {
+    &__info {
+      max-width: 354px;
+    }
+    &__heading,
+    &__txt,
+    &__item {
+      font-size: 16px;
+    }
+  }
+}
+@media(max-width:500px) {
+  .registration {
+    &__wrapper {
+      flex-direction: column;
+      gap:40px;
+      align-items: center;
+    }
+  }
 }
